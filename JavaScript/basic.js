@@ -93,4 +93,54 @@ if(condicion){
   Sabado - Domingo: "Es un fin de semana"
   Si no es ninguno de los dias anteriores imprimir:
   "Por favor ingrese un dia de la semana valido"
+
+  Ejercicio 3:
+  Crear un programa que basado en un numero N
+  verifique si es par o impar e imprima los siguientes mensajes:
+  "El numero N es par"
+  "El numero N es impar"
+  opcional:
+  Si no es un numero entero imprimir el siguiente mensaje:
+  "Por favor ingrese un numero entero"
+
+  Ejercicio 4:
+  Crea un programa que si te llamas "Juan" y tienes 20 años
+  imprima el siguiente mensaje:
+  "Bienvenido Juan, gracias por confiar en nosotros"
+  Si no se cumple la condicion imprimir:
+  "Lo sentimos pero no tienes acceso a este sitio"
 */
+
+//Ejercicio 1
+
+let edad = prompt("Ingrese su edad");
+
+if(edad < 0 && edad > 120){
+  alert("La edad no es valida (Eres una imposibilidad en este mundo)")
+} else{
+  if(edad >= 0 && edad <= 5){
+    alert("Eres un bebe");
+  } else if(edad >= 6 && edad <= 11){
+    alert("Eres un niño");
+  } else if(edad >= 12 && edad <= 18){
+    alert("Eres un adolescente");
+  } else if(edad >= 19 && edad <= 30){
+    alert("Eres un joven");
+  } else if(edad >= 31 && edad <= 64){
+    alert("Eres un adulto");
+  } else if(edad >= 65 && edad <= 120){
+    alert("Eres un adulto mayor");
+  }
+}
+
+//Ejercicio 2
+
+let dia = prompt("Ingrese un dia de la semana");
+
+if(dia == "Lunes" || dia == "Martes" || dia == "Miercoles" || dia == "Jueves" || dia == "Viernes"){
+  alert("Es un dia de la semana");
+} else if(dia == "Sabado" || dia == "Domingo"){
+  alert("Es un fin de semana");
+} else{
+  alert("Por favor ingrese un dia de la semana valido");
+}
